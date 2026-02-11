@@ -1,0 +1,1146 @@
+﻿Test Vector 1
+Value of a:         00000000 (0, 0x0)
+Value of b:         00000000 (0, 0x0)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000000000000, decimal: 0 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 00000000000000000, decimal: 0 
+Top 8 bits of e: 00000000, decimal: 0 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00000000000000000, decimal: 0 
+Full Value of 256*b:         00000000000000000 (0)
+Full Value of -(256*b): 00000000000000000 (0)
+Full Value of f:         000000000000000000 (0)
+Top 8 bits of f:         00000000, decimal: 0, hex: 0x0
+
+
+
+
+
+
+Test Vector 2
+Value of a:         00000001 (1, 0x1)
+Value of b:         00000001 (1, 0x1)
+Value of d:         00000001 (1, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000000000001, decimal: 1 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 0000000100000000, decimal: 256 
+Full Value of e: 00000000100000000, decimal: 256 
+Top 8 bits of e: 00000000, decimal: 0 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00000000000000000, decimal: 0 
+Full Value of 256*b:         00000000100000000 (256)
+Full Value of -(256*b): 11111111100000000 (-256)
+Full Value of f:         111111111100000000 (-256)
+Top 8 bits of f:         11111111, decimal: -1, hex: -0x1
+
+
+
+
+
+
+Test Vector 3
+Value of a:         01111111 (127, 0x7f)
+Value of b:         01111111 (127, 0x7f)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 0011111100000001, decimal: 16129 
+Top 8 bits of c: 00111111, decimal: 63 
+
+
+Equation 2: e = c + d
+Full Value of c: 0011111100000000, decimal: 16128 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 00011111100000000, decimal: 16128 
+Top 8 bits of e: 00011111, decimal: 31 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00011111000000000, decimal: 15872 
+Full Value of 256*b:         00111111100000000 (32512)
+Full Value of -(256*b): 11000000100000000 (-32512)
+Full Value of f:         111011111100000000 (-16640)
+Top 8 bits of f:         11101111, decimal: -17, hex: -0x11
+
+
+
+
+
+
+Test Vector 4
+Value of a:         10000000 (-128, -0x80)
+Value of b:         10000000 (-128, -0x80)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 0100000000000000, decimal: 16384 
+Top 8 bits of c: 01000000, decimal: 64 
+
+
+Equation 2: e = c + d
+Full Value of c: 0100000000000000, decimal: 16384 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 00100000000000000, decimal: 16384 
+Top 8 bits of e: 00100000, decimal: 32 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00100000000000000, decimal: 16384 
+Full Value of 256*b:         11000000000000000 (-32768)
+Full Value of -(256*b): 01000000000000000 (32768)
+Full Value of f:         001100000000000000 (49152)
+Top 8 bits of f:         00110000, decimal: 48, hex: 0x30
+
+
+
+
+
+
+Test Vector 5
+Value of a:         01111111 (127, 0x7f)
+Value of b:         10000000 (-128, -0x80)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 1100000010000000, decimal: -16256 
+Top 8 bits of c: 11000000, decimal: -64 
+
+
+Equation 2: e = c + d
+Full Value of c: 1100000000000000, decimal: -16384 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 11100000000000000, decimal: -16384 
+Top 8 bits of e: 11100000, decimal: -32 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11100000000000000, decimal: -16384 
+Full Value of 256*b:         11000000000000000 (-32768)
+Full Value of -(256*b): 01000000000000000 (32768)
+Full Value of f:         000100000000000000 (16384)
+Top 8 bits of f:         00010000, decimal: 16, hex: 0x10
+
+
+
+
+
+
+Test Vector 6
+Value of a:         10000000 (-128, -0x80)
+Value of b:         01111111 (127, 0x7f)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 1100000010000000, decimal: -16256 
+Top 8 bits of c: 11000000, decimal: -64 
+
+
+Equation 2: e = c + d
+Full Value of c: 1100000000000000, decimal: -16384 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 11100000000000000, decimal: -16384 
+Top 8 bits of e: 11100000, decimal: -32 
+
+
+Equation 3: f = e - (256 * b)
+
+
+Full Value of e:         11100000000000000, decimal: -16384 
+Full Value of 256*b:         00111111100000000 (32512)
+Full Value of -(256*b): 11000000100000000 (-32512)
+Full Value of f:         110100000100000000 (-48896)
+Top 8 bits of f:         11010000, decimal: -48, hex: -0x30
+
+
+
+
+
+
+Test Vector 7
+Value of a:         00000000 (0, 0x0)
+Value of b:         01111111 (127, 0x7f)
+Value of d:         00010000 (16, 0x10)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000000000000, decimal: 0 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 0001000000000000, decimal: 4096 
+Full Value of e: 00001000000000000, decimal: 4096 
+Top 8 bits of e: 00001000, decimal: 8 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00001000000000000, decimal: 4096 
+Full Value of 256*b:         00111111100000000 (32512)
+Full Value of -(256*b): 11000000100000000 (-32512)
+Full Value of f:         111001000100000000 (-28416)
+Top 8 bits of f:         11100100, decimal: -28, hex: -0x1c
+
+
+
+
+
+
+Test Vector 8
+Value of a:         01111111 (127, 0x7f)
+Value of b:         00000000 (0, 0x0)
+Value of d:         00100000 (32, 0x20)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000000000000, decimal: 0 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 0010000000000000, decimal: 8192 
+Full Value of e: 00010000000000000, decimal: 8192 
+Top 8 bits of e: 00010000, decimal: 16 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00010000000000000, decimal: 8192 
+Full Value of 256*b:         00000000000000000 (0)
+Full Value of -(256*b): 00000000000000000 (0)
+Full Value of f:         000010000000000000 (8192)
+Top 8 bits of f:         00001000, decimal: 8, hex: 0x8
+
+
+
+
+
+
+Test Vector 9
+Value of a:         00000000 (0, 0x0)
+Value of b:         10000000 (-128, -0x80)
+Value of d:         11110000 (-16, -0x10)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000000000000, decimal: 0 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 1111000000000000, decimal: -4096 
+Full Value of e: 11111000000000000, decimal: -4096 
+Top 8 bits of e: 11111000, decimal: -8 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11111000000000000, decimal: -4096 
+Full Value of 256*b:         11000000000000000 (-32768)
+Full Value of -(256*b): 01000000000000000 (32768)
+Full Value of f:         000111000000000000 (28672)
+Top 8 bits of f:         00011100, decimal: 28, hex: 0x1c
+
+
+
+
+
+
+Test Vector 10
+Value of a:         10000000 (-128, -0x80)
+Value of b:         00000000 (0, 0x0)
+Value of d:         11110001 (-15, -0xf)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000000000000, decimal: 0 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 1111000100000000, decimal: -3840 
+Full Value of e: 11111000100000000, decimal: -3840 
+Top 8 bits of e: 11111000, decimal: -8 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11111000000000000, decimal: -4096 
+Full Value of 256*b:         00000000000000000 (0)
+Full Value of -(256*b): 00000000000000000 (0)
+Full Value of f:         111111000000000000 (-4096)
+Top 8 bits of f:         11111100, decimal: -4, hex: -0x4
+
+
+
+
+
+
+Test Vector 11
+Value of a:         01111111 (127, 0x7f)
+Value of b:         11111111 (-1, -0x1)
+Value of d:         10000000 (-128, -0x80)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111110000001, decimal: -127 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 1000000000000000, decimal: -32768 
+Full Value of e: 10111111100000000, decimal: -33024 
+Top 8 bits of e: 10111111, decimal: -65 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         10111111000000000, decimal: -33280 
+Full Value of 256*b:         11111111100000000 (-256)
+Full Value of -(256*b): 00000000100000000 (256)
+Full Value of f:         110111111100000000 (-33024)
+Top 8 bits of f:         11011111, decimal: -33, hex: -0x21
+
+
+
+
+
+
+Test Vector 12
+Value of a:         11111111 (-1, -0x1)
+Value of b:         01111111 (127, 0x7f)
+Value of d:         10000000 (-128, -0x80)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111110000001, decimal: -127 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 1000000000000000, decimal: -32768 
+Full Value of e: 10111111100000000, decimal: -33024 
+Top 8 bits of e: 10111111, decimal: -65 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         10111111000000000, decimal: -33280 
+Full Value of 256*b:         00111111100000000 (32512)
+Full Value of -(256*b): 11000000100000000 (-32512)
+Full Value of f:         101111111100000000 (-65792)
+Top 8 bits of f:         10111111, decimal: -65, hex: -0x41
+
+
+
+
+
+
+Test Vector 13
+Value of a:         10000000 (-128, -0x80)
+Value of b:         11111111 (-1, -0x1)
+Value of d:         01111111 (127, 0x7f)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000010000000, decimal: 128 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 0111111100000000, decimal: 32512 
+Full Value of e: 00111111100000000, decimal: 32512 
+Top 8 bits of e: 00111111, decimal: 63 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111111000000000, decimal: 32256 
+Full Value of 256*b:         11111111100000000 (-256)
+Full Value of -(256*b): 00000000100000000 (256)
+Full Value of f:         000111111100000000 (32512)
+Top 8 bits of f:         00011111, decimal: 31, hex: 0x1f 
+
+
+
+
+
+
+
+
+Test Vector 14
+Value of a:         11111111 (-1, -0x1)
+Value of b:         10000000 (-128, -0x80)
+Value of d:         01111111 (127, 0x7f)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000010000000, decimal: 128 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 0111111100000000, decimal: 32512 
+Full Value of e: 00111111100000000, decimal: 32512 
+Top 8 bits of e: 00111111, decimal: 63 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111111000000000, decimal: 32256 
+Full Value of 256*b:         11000000000000000 (-32768)
+Full Value of -(256*b): 01000000000000000 (32768)
+Full Value of f:         001111111000000000 (65024)
+Top 8 bits of f:         00111111, decimal: 63, hex: 0x3f 
+
+
+
+
+
+
+Test Vector 15
+Value of a:         01000000 (64, 0x40)
+Value of b:         01000000 (64, 0x40)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 0001000000000000, decimal: 4096 
+Top 8 bits of c: 00010000, decimal: 16 
+
+
+Equation 2: e = c + d
+Full Value of c: 0001000000000000, decimal: 4096 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 00001000000000000, decimal: 4096 
+Top 8 bits of e: 00001000, decimal: 8 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00001000000000000, decimal: 4096 
+Full Value of 256*b:         00100000000000000 (16384)
+Full Value of -(256*b): 11100000000000000 (-16384)
+Full Value of f:         111101000000000000 (-12288)
+Top 8 bits of f:         11110100, decimal: -12, hex: -0xc 
+
+
+
+
+Test Vector 16
+Value of a:         01100000 (96, 0x60)
+Value of b:         01100000 (96, 0x60)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 0010010000000000, decimal: 9216 
+Top 8 bits of c: 00100100, decimal: 36 
+
+
+Equation 2: e = c + d
+Full Value of c: 0010010000000000, decimal: 9216 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 00010010000000000, decimal: 9216 
+Top 8 bits of e: 00010010, decimal: 18 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00010010000000000, decimal: 9216 
+Full Value of 256*b:         00110000000000000 (24576)
+Full Value of -(256*b): 11010000000000000 (-24576)
+Full Value of f:         111100010000000000 (-15360)
+Top 8 bits of f:         11110001, decimal: -15, hex: -0xf 
+
+
+
+
+Test Vector 17
+Value of a:         01010000 (80, 0x50)
+Value of b:         11010000 (-48, -0x30)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111000100000000, decimal: -3840 
+Top 8 bits of c: 11110001, decimal: -15 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111000100000000, decimal: -3840 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 11111000100000000, decimal: -3840 
+Top 8 bits of e: 11111000, decimal: -8 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11111000000000000, decimal: -4096 
+Full Value of 256*b:         11101000000000000 (-12288)
+Full Value of -(256*b): 00011000000000000 (12288)
+Full Value of f:         000010000000000000 (8192)
+Top 8 bits of f:         00001000, decimal: 8, hex: 0x8 
+
+
+
+
+Test Vector 18
+Value of a:         10010000 (-112, -0x70)
+Value of b:         10010000 (-112, -0x70)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 0011000100000000, decimal: 12544 
+Top 8 bits of c: 00110001, decimal: 49 
+
+
+Equation 2: e = c + d
+Full Value of c: 0011000100000000, decimal: 12544 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 00011000100000000, decimal: 12544 
+Top 8 bits of e: 00011000, decimal: 24 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00011000000000000, decimal: 12288 
+Full Value of 256*b:         11001000000000000 (-28672)
+Full Value of -(256*b): 00111000000000000 (28672)
+Full Value of f:         001010000000000000 (40960)
+Top 8 bits of f:         00101000, decimal: 40, hex: 0x28 
+
+
+
+
+Test Vector 19
+Value of a:         01111111 (127, 0x7f)
+Value of b:         00000010 (2, 0x2)
+Value of d:         01111111 (127, 0x7f)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000011111110, decimal: 254 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 0111111100000000, decimal: 32512 
+Full Value of e: 00111111100000000, decimal: 32512 
+Top 8 bits of e: 00111111, decimal: 63 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111111000000000, decimal: 32256 
+Full Value of 256*b:         00000001000000000 (512)
+Full Value of -(256*b): 11111111000000000 (-512)
+Full Value of f:         000111110000000000 (31744)
+Top 8 bits of f:         00011111, decimal: 31, hex: 0x1f 
+
+
+
+
+Test Vector 20
+Value of a:         01111111 (127, 0x7f)
+Value of b:         01111111 (127, 0x7f)
+Value of d:         01111111 (127, 0x7f)
+
+
+Equation 1: a * b = c
+Full Value of c: 0011111100000001, decimal: 16129 
+Top 8 bits of c: 00111111, decimal: 63 
+
+
+Equation 2: e = c + d
+Full Value of c: 0011111100000000, decimal: 16128 
+Full Value of d: 0111111100000000, decimal: 32512 
+Full Value of e: 01011111000000000, decimal: 48640 
+Top 8 bits of e: 01011111, decimal: 95 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         01011111000000000, decimal: 48640 
+Full Value of 256*b:         00111111100000000 (32512)
+Full Value of -(256*b): 11000000100000000 (-32512)
+Full Value of f:         000011111100000000 (16128)
+Top 8 bits of f:         00001111, decimal: 15, hex: 0xf 
+
+
+
+
+Test Vector 21
+Value of a:         10000000 (-128, -0x80)
+Value of b:         00000010 (2, 0x2)
+Value of d:         10000000 (-128, -0x80)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111100000000, decimal: -256 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 1000000000000000, decimal: -32768 
+Full Value of e: 10111111100000000, decimal: -33024 
+Top 8 bits of e: 10111111, decimal: -65 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         10111111000000000, decimal: -33280 
+Full Value of 256*b:         00000001000000000 (512)
+Full Value of -(256*b): 11111111000000000 (-512)
+Full Value of f:         110111110000000000 (-33792)
+Top 8 bits of f:         11011111, decimal: -33, hex: -0x21 
+
+
+
+
+Test Vector 22
+Value of a:         10000000 (-128, -0x80)
+Value of b:         10000000 (-128, -0x80)
+Value of d:         10000000 (-128, -0x80)
+
+
+Equation 1: a * b = c
+Full Value of c: 0100000000000000, decimal: 16384 
+Top 8 bits of c: 01000000, decimal: 64 
+
+
+Equation 2: e = c + d
+Full Value of c: 0100000000000000, decimal: 16384 
+Full Value of d: 1000000000000000, decimal: -32768 
+Full Value of e: 11100000000000000, decimal: -16384 
+Top 8 bits of e: 11100000, decimal: -32 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11100000000000000, decimal: -16384 
+Full Value of 256*b:         11000000000000000 (-32768)
+Full Value of -(256*b): 01000000000000000 (32768)
+Full Value of f:         000100000000000000 (16384)
+Top 8 bits of f:         00010000, decimal: 16, hex: 0x10 
+
+
+
+
+Test Vector 23
+Value of a:         00000001 (1, 0x1)
+Value of b:         11110000 (-16, -0x10)
+Value of d:         00010000 (16, 0x10)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111111110000, decimal: -16 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 0001000000000000, decimal: 4096 
+Full Value of e: 00000111100000000, decimal: 3840 
+Top 8 bits of e: 00000111, decimal: 7 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00000111000000000, decimal: 3584 
+Full Value of 256*b:         11111000000000000 (-4096)
+Full Value of -(256*b): 00001000000000000 (4096)
+Full Value of f:         000001111000000000 (7680)
+Top 8 bits of f:         00000111, decimal: 7, hex: 0x7 
+
+
+
+
+Test Vector 24
+Value of a:         00000010 (2, 0x2)
+Value of b:         11110000 (-16, -0x10)
+Value of d:         00000000 (0, 0x0)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111111100000, decimal: -32 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 0000000000000000, decimal: 0 
+Full Value of e: 11111111100000000, decimal: -256 
+Top 8 bits of e: 11111111, decimal: -1 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11111111000000000, decimal: -512 
+Full Value of 256*b:         11111000000000000 (-4096)
+Full Value of -(256*b): 00001000000000000 (4096)
+Full Value of f:         000000111000000000 (3584)
+Top 8 bits of f:         00000011, decimal: 3, hex: 0x3
+
+
+Test Vector 25
+Value of a:         00000011 (3, 0x3)
+Value of b:         11110000 (-16, -0x10)
+Value of d:         11111111 (-1, -0x1)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111111010000, decimal: -48 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 1111111100000000, decimal: -256 
+Full Value of e: 11111111000000000, decimal: -512 
+Top 8 bits of e: 11111111, decimal: -1 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11111111000000000, decimal: -512 
+Full Value of 256*b:         11111000000000000 (-4096)
+Full Value of -(256*b): 00001000000000000 (4096)
+Full Value of f:         000000111000000000 (3584)
+Top 8 bits of f:         00000011, decimal: 3, hex: 0x3 
+
+
+
+
+Test Vector 26
+Value of a:         00010000 (16, 0x10)
+Value of b:         00001111 (15, 0xf)
+Value of d:         10000000 (-128, -0x80)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000011110000, decimal: 240 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 1000000000000000, decimal: -32768 
+Full Value of e: 11000000000000000, decimal: -32768 
+Top 8 bits of e: 11000000, decimal: -64 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11000000000000000, decimal: -32768 
+Full Value of 256*b:         00000111100000000 (3840)
+Full Value of -(256*b): 11111000100000000 (-3840)
+Full Value of f:         110111000100000000 (-36608)
+Top 8 bits of f:         11011100, decimal: -36, hex: -0x24 
+
+
+
+
+Test Vector 27
+Value of a:         00000001 (1, 0x1)
+Value of b:         10000000 (-128, -0x80)
+Value of d:         01111111 (127, 0x7f)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111110000000, decimal: -128 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 0111111100000000, decimal: 32512 
+Full Value of e: 00111111000000000, decimal: 32256 
+Top 8 bits of e: 00111111, decimal: 63 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111111000000000, decimal: 32256 
+Full Value of 256*b:         11000000000000000 (-32768)
+Full Value of -(256*b): 01000000000000000 (32768)
+Full Value of f:         001111111000000000 (65024)
+Top 8 bits of f:         00111111, decimal: 63, hex: 0x3f 
+
+
+
+
+Test Vector 28
+Value of a:         01010101 (85, 0x55)
+Value of b:         01010101 (85, 0x55)
+Value of d:         01010101 (85, 0x55)
+
+
+Equation 1: a * b = c
+Full Value of c: 0001110000111001, decimal: 7225 
+Top 8 bits of c: 00011100, decimal: 28 
+
+
+Equation 2: e = c + d
+Full Value of c: 0001110000000000, decimal: 7168 
+Full Value of d: 0101010100000000, decimal: 21760 
+Full Value of e: 00111000100000000, decimal: 28928 
+Top 8 bits of e: 00111000, decimal: 56 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111000000000000, decimal: 28672 
+Full Value of 256*b:         00101010100000000 (21760)
+Full Value of -(256*b): 11010101100000000 (-21760)
+Full Value of f:         000001101100000000 (6912)
+Top 8 bits of f:         00000110, decimal: 6, hex: 0x6 
+
+
+
+
+Test Vector 29
+Value of a:         10101010 (-86, -0x56)
+Value of b:         10101010 (-86, -0x56)
+Value of d:         10101010 (-86, -0x56)
+
+
+Equation 1: a * b = c
+Full Value of c: 0001110011100100, decimal: 7396 
+Top 8 bits of c: 00011100, decimal: 28 
+
+
+Equation 2: e = c + d
+Full Value of c: 0001110000000000, decimal: 7168 
+Full Value of d: 1010101000000000, decimal: -22016 
+Full Value of e: 11100011000000000, decimal: -14848 
+Top 8 bits of e: 11100011, decimal: -29 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11100011000000000, decimal: -14848 
+Full Value of 256*b:         11010101000000000 (-22016)
+Full Value of -(256*b): 00101011000000000 (22016)
+Full Value of f:         000001110000000000 (7168)
+Top 8 bits of f:         00000111, decimal: 7, hex: 0x7 
+
+
+
+
+Test Vector 30
+Value of a:         01010101 (85, 0x55)
+Value of b:         10101010 (-86, -0x56)
+Value of d:         01010101 (85, 0x55)
+
+
+Equation 1: a * b = c
+Full Value of c: 1110001101110010, decimal: -7310 
+Top 8 bits of c: 11100011, decimal: -29 
+
+
+Equation 2: e = c + d
+Full Value of c: 1110001100000000, decimal: -7424 
+Full Value of d: 0101010100000000, decimal: 21760 
+Full Value of e: 00011100000000000, decimal: 14336 
+Top 8 bits of e: 00011100, decimal: 28 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00011100000000000, decimal: 14336 
+Full Value of 256*b:         11010101000000000 (-22016)
+Full Value of -(256*b): 00101011000000000 (22016)
+Full Value of f:         001000111000000000 (36352)
+Top 8 bits of f:         00100011, decimal: 35, hex: 0x23 
+
+
+
+
+Test Vector 31
+Value of a:         10101010 (-86, -0x56)
+Value of b:         01010101 (85, 0x55)
+Value of d:         10101010 (-86, -0x56)
+
+
+Equation 1: a * b = c
+Full Value of c: 1110001101110010, decimal: -7310 
+Top 8 bits of c: 11100011, decimal: -29 
+
+
+Equation 2: e = c + d
+Full Value of c: 1110001100000000, decimal: -7424 
+Full Value of d: 1010101000000000, decimal: -22016 
+Full Value of e: 11000110100000000, decimal: -29440 
+Top 8 bits of e: 11000110, decimal: -58 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11000110000000000, decimal: -29696 
+Full Value of 256*b:         00101010100000000 (21760)
+Full Value of -(256*b): 11010101100000000 (-21760)
+Full Value of f:         110011011100000000 (-51456)
+Top 8 bits of f:         11001101, decimal: -51, hex: -0x33 
+
+
+
+
+Test Vector 32
+Value of a:         00000001 (1, 0x1)
+Value of b:         10000000 (-128, -0x80)
+Value of d:         01111111 (127, 0x7f)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111110000000, decimal: -128 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 0111111100000000, decimal: 32512 
+Full Value of e: 00111111000000000, decimal: 32256 
+Top 8 bits of e: 00111111, decimal: 63 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111111000000000, decimal: 32256 
+Full Value of 256*b:         11000000000000000 (-32768)
+Full Value of -(256*b): 01000000000000000 (32768)
+Full Value of f:         001111111000000000 (65024)
+Top 8 bits of f:         00111111, decimal: 63, hex: 0x3f 
+
+
+
+
+Test Vector 33
+Value of a:         01111111 (127, 0x7f)
+Value of b:         00000001 (1, 0x1)
+Value of d:         10000000 (-128, -0x80)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000001111111, decimal: 127 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 1000000000000000, decimal: -32768 
+Full Value of e: 11000000000000000, decimal: -32768 
+Top 8 bits of e: 11000000, decimal: -64 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11000000000000000, decimal: -32768 
+Full Value of 256*b:         00000000100000000 (256)
+Full Value of -(256*b): 11111111100000000 (-256)
+Full Value of f:         110111111100000000 (-33024)
+Top 8 bits of f:         11011111, decimal: -33, hex: -0x21 
+
+
+
+
+Test Vector 34
+Value of a:         10000000 (-128, -0x80)
+Value of b:         00000001 (1, 0x1)
+Value of d:         01111111 (127, 0x7f)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111110000000, decimal: -128 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 0111111100000000, decimal: 32512 
+Full Value of e: 00111111000000000, decimal: 32256 
+Top 8 bits of e: 00111111, decimal: 63 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111111000000000, decimal: 32256 
+Full Value of 256*b:         00000000100000000 (256)
+Full Value of -(256*b): 11111111100000000 (-256)
+Full Value of f:         000111110100000000 (32000)
+Top 8 bits of f:         00011111, decimal: 31, hex: 0x1f 
+
+
+
+
+Test Vector 35
+Value of a:         11111111 (-1, -0x1)
+Value of b:         00000001 (1, 0x1)
+Value of d:         11111111 (-1, -0x1)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111111111111, decimal: -1 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 1111111100000000, decimal: -256 
+Full Value of e: 11111111000000000, decimal: -512 
+Top 8 bits of e: 11111111, decimal: -1 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11111111000000000, decimal: -512 
+Full Value of 256*b:         00000000100000000 (256)
+Full Value of -(256*b): 11111111100000000 (-256)
+Full Value of f:         111111110100000000 (-768)
+Top 8 bits of f:         11111111, decimal: -1, hex: -0x1 
+
+
+
+
+Test Vector 36
+Value of a:         00010011 (19, 0x13)
+Value of b:         11100111 (-25, -0x19)
+Value of d:         10100100 (-92, -0x5c)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111000100101, decimal: -475 
+Top 8 bits of c: 11111110, decimal: -2 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111000000000, decimal: -512 
+Full Value of d: 1010010000000000, decimal: -23552 
+Full Value of e: 11010001000000000, decimal: -24064 
+Top 8 bits of e: 11010001, decimal: -47 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11010001000000000, decimal: -24064 
+Full Value of 256*b:         11110011100000000 (-6400)
+Full Value of -(256*b): 00001100100000000 (6400)
+Full Value of f:         111011101100000000 (-17664)
+Top 8 bits of f:         11101110, decimal: -18, hex: -0x12 
+
+
+
+
+Test Vector 37
+Value of a:         01101011 (107, 0x6b)
+Value of b:         10010010 (-110, -0x6e)
+Value of d:         00010000 (16, 0x10)
+
+
+Equation 1: a * b = c
+Full Value of c: 1101001000000110, decimal: -11770 
+Top 8 bits of c: 11010010, decimal: -46 
+
+
+Equation 2: e = c + d
+Full Value of c: 1101001000000000, decimal: -11776 
+Full Value of d: 0001000000000000, decimal: 4096 
+Full Value of e: 11110001000000000, decimal: -7680 
+Top 8 bits of e: 11110001, decimal: -15 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11110001000000000, decimal: -7680 
+Full Value of 256*b:         11001001000000000 (-28160)
+Full Value of -(256*b): 00110111000000000 (28160)
+Full Value of f:         000101000000000000 (20480)
+Top 8 bits of f:         00010100, decimal: 20, hex: 0x14 
+
+
+
+
+Test Vector 38
+Value of a:         11110011 (-13, -0xd)
+Value of b:         00001100 (12, 0xc)
+Value of d:         01111110 (126, 0x7e)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111101100100, decimal: -156 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 0111111000000000, decimal: 32256 
+Full Value of e: 00111110100000000, decimal: 32000 
+Top 8 bits of e: 00111110, decimal: 62 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00111110000000000, decimal: 31744 
+Full Value of 256*b:         00000110000000000 (3072)
+Full Value of -(256*b): 11111010000000000 (-3072)
+Full Value of f:         000111000000000000 (28672)
+Top 8 bits of f:         00011100, decimal: 28, hex: 0x1c 
+
+
+
+
+Test Vector 39
+Value of a:         00100000 (32, 0x20)
+Value of b:         00000100 (4, 0x4)
+Value of d:         10000000 (-128, -0x80)
+
+
+Equation 1: a * b = c
+Full Value of c: 0000000010000000, decimal: 128 
+Top 8 bits of c: 00000000, decimal: 0 
+
+
+Equation 2: e = c + d
+Full Value of c: 0000000000000000, decimal: 0 
+Full Value of d: 1000000000000000, decimal: -32768 
+Full Value of e: 11000000000000000, decimal: -32768 
+Top 8 bits of e: 11000000, decimal: -64 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         11000000000000000, decimal: -32768 
+Full Value of 256*b:         00000010000000000 (1024)
+Full Value of -(256*b): 11111110000000000 (-1024)
+Full Value of f:         110111110000000000 (-33792)
+Top 8 bits of f:         11011111, decimal: -33, hex: -0x21 
+
+
+
+
+Test Vector 40
+Value of a:         00010000 (16, 0x10)
+Value of b:         11110000 (-16, -0x10)
+Value of d:         00001111 (15, 0xf)
+
+
+Equation 1: a * b = c
+Full Value of c: 1111111100000000, decimal: -256 
+Top 8 bits of c: 11111111, decimal: -1 
+
+
+Equation 2: e = c + d
+Full Value of c: 1111111100000000, decimal: -256 
+Full Value of d: 0000111100000000, decimal: 3840 
+Full Value of e: 00000111000000000, decimal: 3584 
+Top 8 bits of e: 00000111, decimal: 7 
+
+
+Equation 3: f = e - (256 * b)
+Full Value of e:         00000111000000000, decimal: 3584 
+Full Value of 256*b:         11111000000000000 (-4096)
+Full Value of -(256*b): 00001000000000000 (4096)
+Full Value of f:         000001111000000000 (7680)
+Top 8 bits of f:         00000111, decimal: 7, hex: 0x7

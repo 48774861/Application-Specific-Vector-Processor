@@ -1,0 +1,3 @@
+dsd_finalproject_testvector_verification.ipynb file is a Jupyter Notebook Python script used to generate the intended results for various test vectors for the final project. When inputting elements a, b, and d in the script, make sure to use decimal values in order to keep the proper sign of the inputs.
+
+The expected results and intermediate calculations for each of the 40 test vectors used to test top.v are shown in the DSDFinalProjectTopModuleTestVectors.txt file.
